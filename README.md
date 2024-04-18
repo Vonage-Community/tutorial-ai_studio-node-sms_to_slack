@@ -12,9 +12,14 @@ A node application that connects AI Studio SMS agents with Slack to allow for li
 
 ## Instructions
 1. Clone this repo
-2. In the `.env` file, replace the `SLACK_WEBHOOK_URL` and `AI_STUDIO_KEY` with your Slack App's [Incoming Webhook URL](https://api.slack.com/messaging/webhooks) and your AI Studio [API Key](https://studio.docs.ai.vonage.com/api-integration/authentication).
-3. Create a tunnel using a service like localtunnel or ngrok.
-4. Configure your Slack App:
+2. Initialize your Node application and install dependencies:
+```
+npm init -y
+npm install express axios body-parser dotenv
+```
+4. In the `.env` file, replace the `SLACK_WEBHOOK_URL` and `AI_STUDIO_KEY` with your Slack App's [Incoming Webhook URL](https://api.slack.com/messaging/webhooks) and your AI Studio [API Key](https://studio.docs.ai.vonage.com/api-integration/authentication).
+5. Create a tunnel using a service like localtunnel or ngrok.
+6. Configure your Slack App:
   * Enable Interactivity and create a "Start a ticket" shortcut at the endpoint: '{YOUR_TUNNEL_URL}/slack/start'
   * Create a Slash command for '/reply' at the endpoint '{YOUR_TUNNEL_URL}/slack/message'
   * Create a Slash command for '/close_ticket' at the endpoint '{YOUR_TUNNEL_URL}/slack/end'
