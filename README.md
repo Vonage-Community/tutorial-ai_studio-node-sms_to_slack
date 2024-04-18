@@ -1,7 +1,7 @@
 # Connecting SMS to Slack via Vonage AI Studio
 A node application that connects AI Studio SMS agents with Slack to allow for live human customer support agents directly from Slack.
 
->> You can find full step-by-step instructions on the [Vonage Developer Blog]()
+> You can find full step-by-step instructions on the [Vonage Developer Blog]()
 
 ## Prerequisites
 1. [Vonage Developer Account](https://developer.vonage.com/sign-up)
