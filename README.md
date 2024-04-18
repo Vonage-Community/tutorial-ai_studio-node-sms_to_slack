@@ -1,2 +1,4 @@
-# tutorial-ai_studio-node-sms_to_slack
-A node application that connects AI Studio SMS agents with Slack
+# Connecting SMS to Slack via Vonage AI Studio
+A node application that connects AI Studio SMS agents with Slack to allow for live human customer support agents directly from Slack.
+
+
